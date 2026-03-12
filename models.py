@@ -2,7 +2,6 @@
 """
 models.py
 
-(Por favor modifica o elimina este comentario) 
 Es recomendable que escribas unas cuantas líneas
 explicando el propósito de cada código. Te propongo
 que utilices este archivo para que escribas las
