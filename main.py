@@ -2,11 +2,12 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+
 """¿Eliminamos lo siguiente?
 from models import calc_error, modelo_geom, modelo_circ
 """
 
-def similtud_geometrica(longitud : list[float],  masa : list[float]):
+def similitud_geometrica(longitud : list[float],  masa : list[float]):
     longitud = np.array(longitud)
     peso = np.array(masa)*9.81
     

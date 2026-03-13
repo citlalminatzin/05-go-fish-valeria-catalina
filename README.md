@@ -20,6 +20,9 @@ Aquí escribe qué necesitas que instale para ejecutar tu código, por ejemplo:
 - `matplotlib as plt`
 - `numpy as np`
 
+En la terminal ejecutar el siguiente comando para instalar numpy y matplotlib.
+pip install numpy matplotlib
+
 Y dime cómo debería ejecutar tu código y en qué orden. Recuerda que antes de ejecutar tu código leeré tu `README.md`. Por ejemplo la manera en la que propongo que organizes tu código es
 
 - `README.md`: Contiene las instrucciones, la discusión y la solución de cada ejercicio.
