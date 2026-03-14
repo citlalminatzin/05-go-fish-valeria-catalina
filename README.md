@@ -10,7 +10,7 @@ Escribe tus integrantes iniciando por apellido de forma alfabética
 
 - (Si no modificas esta línea lloro) Segundo, Aureliano
 - Sánchez Cruz Octavio Jesús
-- (Si no modificas esta línea lloro) Segundo, Aureliano
+- Marban Ayala Catalina
 
 
 ## Uso e instalación
@@ -60,20 +60,28 @@ Para resolver el ejecicio daremos la ubicación de cada uno de los puntos dentro
 
 ## Ejercicio 2
 
-Aquí puedes colocar la discusión del modelo, tu interpretación, el efecto de las condiciones iniciales. No tiene que ser perfecto, pero entre más casos puedas cubrir mejor
+El modelo $W = K l^3$, parte de dos suposiciones: la densidad del pez es constante y hay una similitud geométrica en la especie, esto implica que cualquier incremento en la longitud del róbalo se traduce en un crecimiento cúbico de su volumen y, por lo tanto en su masa. El parámetro $K$ actúa como un factor de escala que condensa tanto la densidad constante del pez como la constante de proporcionalidad geométrica de su forma.
+Podemos hacer un cambio de variable donde $X = l^3$ e $Y = W$. De esta forma el modelo se convierte en $Y = K X$ 
 
-(Por favor modifica esta línea, tú puedes yo creo en ti) Puedes darle formato de **negritas**, *itálicas*, incluir texto matemático $x\approx 1, \epsilon > 0$, [enlaces](https://www.markdownguide.org/cheat-sheet/), `código`,
 
-```python
-# Esto es un ejemplo, lo puedes quitar
-print("Código en bloque")
-```
+Para estimar un buen valor de K ocupamos minimos cuadrados, que nos ayuda a minimizar el error entre nuestras predicciones y los datos reales. 
+La formula para encontrar K cuando la recta pasa por el origen es: $$K = \frac{\sum (X_i \cdot Y_i)}{\sum X_i^2}$$
 
-(Si no eliminas esta línea lloro) También puedes incluir citas
 
-> Por favor elimina esta cita
+El modelo está restringido por las condiciones iniciales que asumimos **Densidad constante:** Asumir que $\rho$ no cambia es poco realista, en la naturaleza la densidad de un pez puede variar por factores como la cantidad de alimento digerido recientemente o la etapa reproductiva.
+**Similitud geométrica:** Asume que todos los róbalos son copias escaladas de un mismo pez, es decir, que la relación entre su longitud, anchura y altura no cambia sin importar la etapa de desarrollo del pes.
 
-(Si no eliminas esta línea lloro) Puedes incluir notas al pie [^1].
+Análisis de Casos
+
+El modelo se comportará de manera distinta dependiendo de la anatomía real del pez capturado. 
+
+* **Caso 1: El róbalo promedio .** Para los peces que crecen manteniendo una proporción estándar, el modelo funciona muy bien. Esto se refleja en nuestro coeficiente de correlación de Pearson $\rho \approx 0.99$, indicando que la gran mayoría de los datos de la muestra siguen esta tendencia volumétrica regular.
+* **Caso 2: El pez largo y delgado (Sobreestimación).** Si un participante captura un pez inusualmente largo pero flaco, la variable $l^3$ será muy grande y nuestro modelo predecirá un peso alto.
+* **Caso 3: El pez corto y gordo (Subestimación).** En el escenario opuesto, si tenemos un pez gordo pero de longitud corta, la variable $l^3$ será pequeña y el peso menor de lo que en relidad es.
+
+En un campeonato de pesca, un competidor con un pez robusto y pesado podría perder frente a uno con un pez más largo pero más ligero.
+
+
 
 ## Ejercicio 3
 

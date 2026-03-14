@@ -10,3 +10,6 @@ def read_data(path="data/pescados.csv"):
     peso = datos[:, 1]
     
     return longitud, peso
+
+
+
