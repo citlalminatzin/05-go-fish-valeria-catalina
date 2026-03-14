@@ -2,12 +2,16 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+
 """¿Eliminamos lo siguiente?
 from models import calc_error, modelo_geom, modelo_circ
 """
 
 def similitud_geometrica(longitud : list[float],  masa : list[float]):
+<<<<<<< HEAD
     """Calcula la constante K para el modelo W = K * l^3 usando Mínimos Cuadrados."""
+=======
+    
     
     # Convertimos las listas a arreglos de numpy
     l_array = np.array(longitud)

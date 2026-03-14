@@ -6,8 +6,11 @@ import models
 
 #Ejercicio 1
 #La explicación de este ejercicio la pueden encontrar en README.md
+from data import read_data
+from main import similitud_geometrica
 
 longitud, peso = read_data("data/pescados.csv")
+<<<<<<< HEAD
 graficar_longitud_peso(longitud, peso)
 
 # Ejercicio 2
@@ -19,3 +22,5 @@ rho = models.pearson(x.tolist(), peso.tolist())
 print(f"Coeficiente de Pearson: {rho:.4f}")
 #Gráfica
 models.graficar_ej2(x=x.tolist(), y=peso.tolist(), k=K, titulo='Modelo de Similitud Geométrica: Peso vs Longitud al Cubo')
+=======
+
